@@ -2,11 +2,12 @@
 
 https://ziitteo-weverse-shop.netlify.app
 
-##강의 내용
+## 강의 내용
 1. 라우터 세팅
 2. Navigate
 3. Private Route 상품을 클릭한 경우 로그인 상태 상품 디테일 페이지로 로그아웃 상태면 로그인 페이지로 이동
 4. 로그인 기능
+   
 
 ## 직접 구현
 1. UI 디자인 (WeveseShop 클론)
