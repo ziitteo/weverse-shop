@@ -194,9 +194,20 @@
       "reservation": false,
       "best": false
     },
-
     {
       "id": 15,
+      "artist": "SHINee",
+      "img": "https://cdn-contents.weverseshop.io/public/shop/99ee04015bd4c2c224f42aabbe4baf0d.png?q=95&w=720",
+      "title": "2024 KEYLAND ON : AND ON <#> HD Single-view Live Only",
+      "price": 55000,
+      "cash": 550,
+      "membership": false,
+      "exclusive": false,
+      "reservation": false,
+      "best": false
+    },
+    {
+      "id": 16,
       "artist": "SEVENTEEN",
       "img": "https://cdn-contents.weverseshop.io/public/shop/afbb04be073cae4f7a5a29322c938aa3.png?q=95&w=720",
       "title": "Acrylic Keyring",
@@ -208,7 +219,7 @@
       "best": true
     },
     {
-      "id": 16,
+      "id": 17,
       "artist": "SEVENTEEN",
       "img": "https://cdn-contents.weverseshop.io/public/shop/061cbad131636e03a8c1ed0e9c989132.png?q=95&w=720",
       "title": "CARAT MEMBERSHIP KIT",
@@ -221,7 +232,7 @@
       "delivery": "2024.10.24 ~ 2024.10.31"
     },
     {
-      "id": 17,
+      "id": 18,
       "artist": "SEVENTEEN",
       "img": "https://cdn-contents.weverseshop.io/public/shop/692b3b3edef70ac5a7ee499530079c74.png?q=95&w=720",
       "title": "CARAT MEMBERSHIP",
@@ -233,7 +244,7 @@
       "best": false
     },
     {
-      "id": 18,
+      "id": 19,
       "artist": "SEVENTEEN",
       "img": "https://cdn-contents.weverseshop.io/public/shop/a1f5944bc66fb61bd53a86bfeee5618d.png?q=95&w=720",
       "title": "LENTICUALR MINI CARD & BINDER ('17 IS RIGHT HERE')",
@@ -246,7 +257,7 @@
     },
 
     {
-      "id": 19,
+      "id": 20,
       "artist": "NewJeans",
       "img": "https://cdn-contents.weverseshop.io/public/shop/5e7f14bf67a7aab29a441fcba3c75044.png?q=95&w=720",
       "title": "NewJeans 'How Sweet' Weverse Albums ver. (Random)",
@@ -258,7 +269,7 @@
       "best": true
     },
     {
-      "id": 20,
+      "id": 21,
       "artist": "NewJeans",
       "img": "https://cdn-contents.weverseshop.io/public/shop/c35ba933a64f7726984709aea21d075d.png?q=95&w=720",
       "title": "NewJeans 2nd EP 'Get Up' Weverse Albums ver. (Set)",
@@ -270,7 +281,7 @@
       "best": true
     },
     {
-      "id": 21,
+      "id": 22,
       "artist": "NewJeans",
       "img": "https://cdn-contents.weverseshop.io/public/shop/3c721ee4b717df51771f1389a8227817.png?q=95&w=720",
       "title": "bunini FAN COVER",
@@ -282,7 +293,7 @@
       "best": false
     },
     {
-      "id": 22,
+      "id": 23,
       "artist": "NewJeans",
       "img": "https://cdn-contents.weverseshop.io/public/shop/83df484237dbdb896444e3c7fe99aa90.png?q=95&w=720",
       "title": "TOKKI FAN COVER",
