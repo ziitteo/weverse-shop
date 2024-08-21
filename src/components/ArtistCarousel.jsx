@@ -36,6 +36,11 @@ const ArtistCarousel = props => {
     }
   };
 
+  const handleResize = () => {
+    updateSlideCount();
+    calculateSlideWidth();
+  };
+
   // 다음 슬라이드로 이동하는 함수
   const nextSlide = () => {
     // 이동할 수 있는 최대 인덱스를 계산
@@ -57,13 +62,7 @@ const ArtistCarousel = props => {
   // 컴포넌트가 처음 렌더링 될 때와 브라우저 크기가 변경될 때 슬라이드 개수를 재계산
   useEffect(() => {
     // 슬라이드 개수를 먼저 설정한 후 슬라이드 너비 계산
-    updateSlideCount();
-    calculateSlideWidth();
-
-    const handleResize = () => {
-      updateSlideCount();
-      calculateSlideWidth();
-    };
+    handleResize();
 
     window.addEventListener('resize', handleResize); // 창 크기 변경 시 슬라이드 개수 재계산
 

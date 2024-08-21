@@ -330,8 +330,8 @@ a {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
   border: 1px solid #dcdee4;
   border-radius: 50%;
   cursor: pointer;
@@ -511,7 +511,6 @@ a {
 
 .product-swiper-wrap .product-swiper .product-swiper-list .product-swiper-item {
   cursor: pointer;
-  width: 100%; /* 슬라이드의 너비를 동적으로 설정 */
 }
 
 .product-info-container {

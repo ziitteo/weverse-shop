@@ -15,7 +15,10 @@ const ProductCarousel = props => {
 
   // 슬라이드 개수를 설정하는 함수
   const updateSlideCount = () => {
-    setSlideCount(window.innerWidth >= 1180 ? 3 : window.innerWidth >= 768 ? 2 : 1);
+    setSlideCount(window.innerWidth >= 768 ? 3 : 1);
+
+    // 정확한 디버깅을 위해 콘솔에 너비 출력
+    console.log('Viewport width:', window.innerWidth);
   };
 
   // 슬라이드 너비 계산 및 브라우저 크기 변경에 따른 재설정
@@ -27,6 +30,11 @@ const ProductCarousel = props => {
       const calculatedSlideWidth = (containerWidth - slideGap * (slideCount - 1) - containerPadding * 2) / slideCount;
       setSlideWidth(calculatedSlideWidth);
     }
+  };
+
+  const handleResize = () => {
+    updateSlideCount();
+    calculateSlideWidth();
   };
 
   // 다음 슬라이드로 이동하는 함수 (1개씩 이동)
@@ -42,21 +50,12 @@ const ProductCarousel = props => {
     setCurrentIndex(prevIndex); // 인덱스 업데이트
   };
 
-  // 컴포넌트가 처음 렌더링 될 때와 브라우저 크기가 변경될 때 슬라이드 개수를 재계산
   useEffect(() => {
-    // 슬라이드 개수를 먼저 설정한 후 슬라이드 너비 계산
-    updateSlideCount();
-    calculateSlideWidth();
-
-    const handleResize = () => {
-      updateSlideCount();
-      calculateSlideWidth();
-    };
-
-    window.addEventListener('resize', handleResize); // 창 크기 변경 시 슬라이드 개수 재계산
+    // 컴포넌트가 처음 렌더링될 때 슬라이드 개수를 설정하고 슬라이드 너비를 계산
+    handleResize();
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      // 컴포넌트가 언마운트될 때 이벤트 리스너 제거
       window.removeEventListener('resize', handleResize);
     };
   }, [slideCount]);
@@ -95,10 +94,11 @@ const ProductCarousel = props => {
               style={{
                 transform: `translateX(-${(slideWidth + slideGap) * currentIndex}px)`,
                 transition: 'transform 0.3s ease-in-out',
+                gap: `${slideGap}px`,
               }}
             >
               {filteredProductList.map(product => (
-                <li key={product.id} className='product-swiper-item' style={{ width: props.slideWidth }}>
+                <li key={product.id} className='product-swiper-item' style={{ width: slideWidth }}>
                   <ProductCard
                     item={product}
                     artistName={props.artistName}

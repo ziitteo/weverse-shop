@@ -12,7 +12,7 @@ const SearchPage = props => {
       <Row>
         {searchProductList.length > 0 ? (
           searchProductList.map(product => (
-            <Col lg={3} md={3} sm={6} xsm={6} key={product.id}>
+            <Col lg={3} md={12} sm={12} key={product.id}>
               <ProductCard item={product} />
             </Col>
           ))

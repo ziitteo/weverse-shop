@@ -14,7 +14,7 @@ const Best = props => {
       <Container className='best-container'>
         <Row className='row-container'>
           {filteredBestList.map(product => (
-            <Col lg={3} md={3} sm={12} xsm={12} key={product.id} className='best-product-card'>
+            <Col lg={3} md={12} sm={12} key={product.id} className='best-product-card'>
               <ProductCard item={product} />
             </Col>
           ))}
