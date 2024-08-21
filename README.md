@@ -18,3 +18,5 @@ https://ziitteo-weverse-shop.netlify.app
 6. 로그인 버튼 클릭하면 로그인 페이지로 이동
 7. 검색 기능
 
+## 추가 할 기능
+1. 반응형
