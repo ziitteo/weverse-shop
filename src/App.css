@@ -638,12 +638,20 @@ a {
 
 .notice-container .notice-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
   align-items: stretch;
   gap: 10px;
   padding: 0;
   margin: 0;
+}
+
+.notice-container .notice-list.wide {
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.notice-container .notice-list.narrow {
+  grid-auto-rows: 3fr;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .notice-container .notice-list li {

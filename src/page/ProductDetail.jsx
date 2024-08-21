@@ -11,7 +11,7 @@ const ProductDetail = () => {
   const [totalPrice, setTotalPrice] = useState(product ? product.price : 0);
 
   const getProductDetail = async () => {
-    const url = `ttps://my-json-server.typicode.com/ziitteo/weverse-shop/products/${id}`;
+    const url = `https://my-json-server.typicode.com/ziitteo/weverse-shop/products/${id}`;
 
     try {
       const response = await fetch(url);
